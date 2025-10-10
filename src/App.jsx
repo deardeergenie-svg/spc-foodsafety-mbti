@@ -251,7 +251,7 @@ export default function App() {
                       <h3 className="font-semibold mt-3">식품안전문화 성향 진단</h3>
                       <p className="opacity-90">{info.hygiene || "-"}</p>
 
-                      <p className="text-xs opacity-60 mt-4">※ 교육·코칭 참고용 도구입니다.</p>
+                      <p className="text-xs opacity-60 mt-4">※ 식품안전문화 교육 및 캠페인을 위한 링크입니다.</p>
                     </div>
                   </>
                 );
