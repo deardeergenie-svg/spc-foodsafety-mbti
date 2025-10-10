@@ -164,10 +164,10 @@ export default function App(){
               <div className="space-y-2">
                 <p className="font-semibold">성격 요약</p>
                 <p className="opacity-90">{info.summary}</p>
-                <p className="font-semibold mt-3">식품위생·품질 성향 진단</p>
+                <p className="font-semibold mt-3">식품안전문화 성향 진단</p>
                 <p className="opacity-90">{info.tip}</p>
               </div>
-              <p className="text-sm opacity-60">※ 교육·코칭 참고용 도구입니다.</p>
+              <p className="text-sm opacity-60">※ 교육·캠페인 참여 독려용 테스트입니다.</p>
             </div>
             <div className="rounded-2xl border bg-white/90 p-4 flex flex-wrap gap-2">
               <ShareLinkQR/>
