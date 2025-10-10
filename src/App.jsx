@@ -10,8 +10,8 @@ function classNames(...a){return a.filter(Boolean).join(" ");}
 function Header(){
   return (
     <header className="max-w-3xl mx-auto text-center mt-8 mb-6">
-      <h1 className="text-3xl font-extrabold">식품위생·품질 성향 진단 (FS‑MBTI)</h1>
-      <p className="text-sm opacity-70 mt-2">교육·코칭 목적의 참고 도구입니다. 응답은 브라우저에만 저장됩니다.</p>
+      <h1 className="text-3xl font-extrabold">SPC식품안전문화 MBTI 성향 </h1>
+      <p className="text-sm opacity-70 mt-2">본 테스트는 식품안전문화 참여를 위해 기존 MBTI를 응용한 내용이며, 테스트 결과는 익명으로 이 브라우저에만 저장됩니다.</p>
     </header>
   );
 }
@@ -19,15 +19,9 @@ function Header(){
 function Start({onStart,nickname,setNickname,consent,setConsent}){
   return (
     <div className="max-w-xl mx-auto rounded-2xl border bg-white p-6 space-y-4">
-      <p>아래 40문항에 1~5점으로 응답해 주세요.</p>
-      <label className="block text-sm">가명(선택)
-        <input className="mt-1 w-full rounded-xl border p-2" value={nickname} onChange={e=>setNickname(e.target.value)} placeholder="예: 현장리더A" />
-      </label>
-      <label className="flex items-center gap-2 text-sm">
-        <input type="checkbox" checked={consent} onChange={e=>setConsent(e.target.checked)} />
-        <span>비식별 처리 및 로컬 저장에 동의합니다.</span>
-      </label>
-      <button disabled={!consent} className="px-4 py-2 rounded-xl text-white disabled:opacity-50" style={{background:BRAND.primary}} onClick={onStart}>시작하기</button>
+      <p>다 40문항에 1~5점으로 응답해 주세요.</p>
+      <button className="px-4 py-2 rounded-xl text-white" style={{background:BRAND.primary}} onClick={onStart}>
+  시작하기 </button>
     </div>
   );
 }
