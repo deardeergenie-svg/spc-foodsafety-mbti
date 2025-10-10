@@ -19,7 +19,7 @@ function Header(){
 function Start({onStart,nickname,setNickname,consent,setConsent}){
   return (
     <div className="max-w-xl mx-auto rounded-2xl border bg-white p-6 space-y-4">
-      <p>다 40문항에 1~5점으로 응답해 주세요.</p>
+      <p>다음 40문항에 1~5점으로 응답해 주세요.</p>
       <button className="px-4 py-2 rounded-xl text-white" style={{background:BRAND.primary}} onClick={onStart}>
   시작하기 </button>
     </div>
