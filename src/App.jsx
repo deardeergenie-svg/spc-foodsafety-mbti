@@ -78,7 +78,7 @@ function compute(answers){
   const code = letters.join("");
   const normalized = {};
   for(const k of Object.keys(axes)){
-    const maxAbs = (counts[k]*2) or 1;
+    const maxAbs = (counts[k]*2) || 1;
     // fix JS syntax for OR
   }
   return {code, axes, counts};
